@@ -12,6 +12,8 @@ cask "peppap" do
     strategy :github_latest
   end
 
+  deprecate! date: "2026-10-18", because: "is no longer distributed via Homebrew; it updates itself, and new versions are on https://github.com/dongaber/peppap/releases"
+
   auto_updates true
   depends_on macos: :sonoma
 
